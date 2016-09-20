@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Nerds. Магазин готовых макетов</title>
+  </head>
+  <body class="inner-page">
+    <header class="page-header">
+      <div class="container">
+        <nav class="page-nav">
+          <a class="nav-logo" href="/"><img src="http://placehold.it/185x75" width="185" height="75" alt="Логотип Nerds"></a>
+          <ul class="nav-menu">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="nav-user">
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </nav>
+        <div class="page-title">Добро пожаловать в магазин готовых макетов</div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form class="filter" action="http://htmlacademy/echo" method="post">
+          <fieldset>
+            <legend>Стоимость:</legend>
+            <div class="range price-range">
+              <div class="range-outer"></div>
+              <div class="range-inner"></div>
+              <span class="range-toggle range-toggle-left"></span>
+              <span class="range-toggle range-toggle-right"></span>
+            </div>
+            <label for="price-from">от</label>
+            <input type="number" name="price-from" id="price-from">
+            <label for="price-to">до</label>
+            <input type="number" name="price-to" id="price-to">
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="grid" id="adaptive-grid">
+                <label for="adaptive-grid">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" id="fixed-grid">
+                <label for="fixed-grid">Фиксированная</label>
+              </li>
+              <li>
+                <input type="radio" name="grid" id="responsive-grid">
+                <label for="responsive-grid">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="slider-feature" id="slider-feature">
+                <label for="slider-feature">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="advant-feature" id="advant-feature">
+                <label for="advant-feature">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="news-feature" id="news-feature">
+                <label for="news-feature">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="gallery-feature" id="gallery-feature">
+                <label for="gallery-feature">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" name="cart-feature" id="cart-feature">
+                <label for="cart-feature">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button filter-button" type="submit" name="filter-submit">Показать</button>
+        </form>
+        <div class="content">
+          <div class="content-sorting">
+            Сортировать:
+            <ul>
+              <li>По цене</li>
+              <li>По типу</li>
+              <li>По функционалу</li>
+            </ul>
+            <button class="sort-button sort-descend" type="button">По убыванию</button>
+            <button class="sort-button sort-ascend" type="button">По возрастанию</button>
+          </div>
+          <div class="content-items">
+            <article class="content-item">
+              <div class="item-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="content-item-image">
+                <img src="placehold.it/240x240" width="240" height="240" alt="сайт Aviator" />
+                <div class="content-item-info">
+                  <h2>Aviator</h2>
+                  <p>Одностраничный макет с авторским дизайном</p>
+                  <a class="button buy-button" href="#">8000 р.</a>
+                </div>
+              </div>
+            </article>
+            <article class="content-item">
+              <div class="item-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="content-item-image">
+                <img src="placehold.it/240x240" width="240" height="240" alt="сайт Sunset" />
+                <div class="content-item-info">
+                  <h2>Sunset</h2>
+                  <p>Интернет-магазин с личным кабинетом</p>
+                  <a class="button buy-button" href="#">10000 р.</a>
+                </div>
+              </div>
+            </article>
+            <article class="content-item">
+              <div class="item-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="content-item-image">
+                <img src="placehold.it/240x240" width="240" height="240" alt="сайт Forte" />
+                <div class="content-item-info">
+                  <h2>Forte</h2>
+                  <p>Отличный макет для личного блока</p>
+                  <a class="button buy-button" href="#">5000 р.</a>
+                </div>
+              </div>
+            </article>
+            <article class="content-item">
+              <div class="item-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="content-item-image">
+                <img src="placehold.it/240x240" width="240" height="240" alt="сайт Modern organic thai" />
+                <div class="content-item-info">
+                  <h2>Modern organic thai</h2>
+                  <p>Сайт для ресторана быстрого питания</p>
+                  <a class="button buy-button" href="#">12000 р.</a>
+                </div>
+              </div>
+            </article>
+            <article class="content-item">
+              <div class="item-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="content-item-image">
+                <img src="placehold.it/240x240" width="240" height="240" alt="сайт Avenue" />
+                <div class="content-item-info">
+                  <h2>Avenue</h2>
+                  <p>Макет для блога о путешествиях</p>
+                  <a class="button buy-button" href="#">8000 р.</a>
+                </div>
+              </div>
+            </article>
+            <article class="content-item">
+              <div class="item-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="content-item-image">
+                <img src="placehold.it/240x240" width="240" height="240" alt="сайт Dovetail" />
+                <div class="content-item-info">
+                  <h2>Dovetail</h2>
+                  <p>Интернет-магазин с галереей товаров</p>
+                  <a class="button buy-button" href="#">14000 р.</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="paginator content-paginanor">
+          <ul>
+            <li class="page-active"><a>1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">Следующая</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="map">
+        <img src="http://placehold.it/1199x416" width="1199" height="416" alt="Карта">
+        <div class="contacts">
+          <span class="contacts-title">NЁRDS DESIGN STUDIO</span>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="button contacts-button" href="#">Напишите нам</a>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <section class="footer-socials">
+        <a href="#">Вконакте</a>
+        <a href="#">Фейсбук</a>
+        <a href="#">Инстаграм</a>
+      </section>
+      <section class="footer-friends">
+        <span class="footer-friends-title">Давайте дружить, это выгодно!</span>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </footer>
+  </body>
+</html>
