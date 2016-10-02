@@ -1,4 +1,102 @@
+body {
+  font: 16px/22px Roboto, Verdana, Arial, sans-serif;
+  color: #283136;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 900px;
   margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.page-header {
+  color: #283136;
+  background-color: #eeeeee;
+}
+
+.page-nav {
+  padding-top: 28px;
+  margin-bottom: 45px;
+}
+
+.nav-logo,
+.nav-logo img {
+  width: 139px;
+  height: 56px;
+}
+
+.nav-logo {
+  float: left;
+}
+
+.nav-wrap {
+  float: right;
+  min-width: 560px;
+}
+.nav-menu,
+.nav-user {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+
+  font-size: 0;
+
+  vertical-align: bottom;
+  list-style: none;
+}
+
+.nav-user {
+  float: right;
+  min-width: 160px;
+  text-align: right;
+}
+
+.nav-menu > li,
+.nav-user > li {
+  display: inline-block;
+  padding-top: 30px;
+  padding-right: 45px;
+
+  vertical-align: bottom;
+}
+
+.nav-menu > li:last-of-type,
+.nav-user > li:last-of-type {
+  padding-right: 0;
+}
+
+.nav-menu a,
+.nav-user a {
+  padding-bottom: 5px;
+
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.nav-menu a:hover,
+.nav-user a:hover {
+  color: #fb565a;
+}
+
+.nav-menu a:active,
+.nav-user a:active {
+  color: #000000;
+  opacity: 0.4;
+}
+
+.nav-menu a.selected,
+.nav-user a.selected {
+  color: #000000;
+  box-shadow: 0 2px #fb565a;
 }
