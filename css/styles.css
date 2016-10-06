@@ -19,6 +19,8 @@ a {
 }
 
 .page-header {
+  margin-bottom: 80px;
+
   color: #283136;
   background-color: #eeeeee;
 }
@@ -42,18 +44,21 @@ a {
   float: right;
   min-width: 560px;
 }
+
 .nav-menu,
 .nav-user {
-  display: inline-block;
   padding: 0;
   margin: 0;
 
   font-size: 0;
 
-  vertical-align: bottom;
   list-style: none;
 }
 
+.nav-menu {
+  float: left;
+  min-width: 400px;
+}
 .nav-user {
   float: right;
   min-width: 160px;
@@ -133,4 +138,132 @@ a {
 #slider-radio-2:checked ~ .slider-visible #slider-block-2,
 #slider-radio-3:checked ~ .slider-visible #slider-block-3 {
   display: block;
+}
+
+.features {
+  margin-bottom: 80px;
+  font-size: 0px;
+}
+
+.features-item {
+  display: inline-block;
+  width: 240px;
+  margin-right: 80px;
+
+  text-align: left;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.description {
+  position: relative;
+
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+.description-logo {
+  position: absolute;
+  top: -15px;
+  right: 0;
+}
+
+.description-general {
+  float: left;
+  width: 620px;
+  margin-bottom: 40px;
+}
+
+.description h2 {
+  padding: 0;
+  margin: 0;
+
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.description-features {
+  clear: both;
+}
+
+.description-features-left {
+  float: left;
+  width: 620px;
+}
+
+.description-features-right {
+  float: right;
+  width: 230px;
+}
+
+.portfolio {
+  margin-top: 80px;
+  margin-bottom: 25px;
+
+  font-size: 0;
+}
+
+.portfolio-item {
+  display: inline-block;
+  padding: 0 10px;
+  margin-right: 100px;
+
+  vertical-align: middle;
+}
+
+.portfolio-item:last-child {
+  margin-right: 0;
+}
+
+.map {
+  position: relative;
+
+  margin-bottom: 80px;
+}
+
+.map img {
+  width: 1199px;
+  height: 416px;
+}
+
+.contacts {
+  position: absolute;
+  top: 70px;
+  left: 160px;
+
+  width: 250px;
+  padding: 25px 20px;
+
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.footer-socials {
+  float: left;
+  min-width: 300px;
+  margin-right: 20px;
+
+  font-size: 0;
+}
+
+.footer-socials a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 27px;
+
+  vertical-align: top;
+  background-color: #000000;
+  border-radius: 50%;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.footer-friends {
+  float: left;
+  width: 560px;
 }
