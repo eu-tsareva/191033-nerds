@@ -7,26 +7,28 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic" rel="stylesheet">
     <title>Nerds. Магазин готовых макетов</title>
   </head>
-  <body class="inner-page">
+  <body class="catalog-page">
     <header class="page-header">
       <div class="container">
-        <nav class="page-nav">
-          <a class="nav-logo" href="/"><img src="https://placehold.it/139x56" width="139" height="56" alt="Логотип Nerds"></a>
-          <ul class="nav-menu">
-            <li><a href="#">Студия</a></li>
-            <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          <ul class="nav-user">
-            <li><a href="#">Корзина</a></li>
-          </ul>
+        <nav class="page-nav clearfix">
+          <a class="nav-logo" href="\"><img src="img/header-logo.png" width="139" height="56" alt="Логотип Nerds"></a>
+          <div class="nav-wrap">
+            <ul class="nav-menu">
+              <li><a href="#">Студия</a></li>
+              <li><a href="#">Клиенты</a></li>
+              <li><a href="#">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="nav-user">
+              <li><a href="#">Корзина</a></li>
+            </ul>
+          </div>
         </nav>
         <div class="page-title">Добро пожаловать в магазин готовых макетов</div>
       </div>
     </header>
     <main>
-      <div class="container">
+      <div class="container clearfix">
         <form class="filter" action="http://htmlacademy/echo" method="post">
           <fieldset>
             <legend>Стоимость:</legend>
@@ -85,13 +87,13 @@
           </fieldset>
           <button class="button filter-button" type="submit" name="filter-submit">Показать</button>
         </form>
-        <div class="content">
+        <div class="catalog-content">
           <div class="content-sorting">
             Сортировать:
             <ul>
-              <li>По цене</li>
-              <li>По типу</li>
-              <li>По функционалу</li>
+              <li><button class="sort-button sort-type" type="button">По цене</button></li>
+              <li><button class="sort-button sort-type" type="button">По типу</button></li>
+              <li><button class="sort-button sort-type" type="button">По функционалу</button></li>
             </ul>
             <button class="sort-button sort-descend" type="button">По убыванию</button>
             <button class="sort-button sort-ascend" type="button">По возрастанию</button>
@@ -104,7 +106,7 @@
                 <span></span>
               </div>
               <div class="content-item-image">
-                <img src="https://placehold.it/240x240" width="240" height="240" alt="сайт Aviator" />
+                <img src="img/aviator.jpg" width="240" height="240" alt="сайт Aviator">
                 <div class="content-item-info">
                   <h2>Aviator</h2>
                   <p>Одностраничный макет с авторским дизайном</p>
@@ -119,7 +121,7 @@
                 <span></span>
               </div>
               <div class="content-item-image">
-                <img src="https://placehold.it/240x240" width="240" height="240" alt="сайт Sunset" />
+                <img src="img/sunset.jpg" width="240" height="240" alt="сайт Sunset">
                 <div class="content-item-info">
                   <h2>Sunset</h2>
                   <p>Интернет-магазин с личным кабинетом</p>
@@ -134,7 +136,7 @@
                 <span></span>
               </div>
               <div class="content-item-image">
-                <img src="https://placehold.it/240x240" width="240" height="240" alt="сайт Forte" />
+                <img src="img/forte.jpg" width="240" height="240" alt="сайт Forte">
                 <div class="content-item-info">
                   <h2>Forte</h2>
                   <p>Отличный макет для личного блока</p>
@@ -149,7 +151,7 @@
                 <span></span>
               </div>
               <div class="content-item-image">
-                <img src="https://placehold.it/240x240" width="240" height="240" alt="сайт Modern organic thai" />
+                <img src="img/thai.jpg" width="240" height="240" alt="сайт Modern organic thai">
                 <div class="content-item-info">
                   <h2>Modern organic thai</h2>
                   <p>Сайт для ресторана быстрого питания</p>
@@ -164,7 +166,7 @@
                 <span></span>
               </div>
               <div class="content-item-image">
-                <img src="https://placehold.it/239x240" width="239" height="240" alt="сайт Avenue" />
+                <img src="img/avenue.jpg" width="240" height="240" alt="сайт Avenue">
                 <div class="content-item-info">
                   <h2>Avenue</h2>
                   <p>Макет для блога о путешествиях</p>
@@ -179,7 +181,7 @@
                 <span></span>
               </div>
               <div class="content-item-image">
-                <img src="https://placehold.it/239x240" width="239" height="240" alt="сайт Dovetail" />
+                <img src="img/dovetail.jpg" width="240" height="240" alt="сайт Dovetail">
                 <div class="content-item-info">
                   <h2>Dovetail</h2>
                   <p>Интернет-магазин с галереей товаров</p>
@@ -188,9 +190,7 @@
               </div>
             </article>
           </div>
-        </div>
-        <div class="paginator content-paginanor">
-          <ul>
+          <ul class="paginator content-paginator">
             <li class="page-active"><a>1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
@@ -199,7 +199,7 @@
         </div>
       </div>
       <div class="map">
-        <img src="https://placehold.it/1199x416" width="1199" height="416" alt="Карта">
+        <img src="img/map.jpg" width="1199" height="416" alt="Карта">
         <div class="contacts">
           <span class="contacts-title">NЁRDS DESIGN STUDIO</span>
           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
