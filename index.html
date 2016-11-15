@@ -10,20 +10,22 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="page-nav clearfix">
-          <a class="nav-logo"><img src="img/header-logo.png" width="139" height="56" alt="Логотип Nerds"></a>
+        <div class="page-menu clearfix">
+          <a class="page-logo"><img src="img/header-logo.png" width="139" height="56" alt="Логотип Nerds"></a>
           <div class="nav-wrap">
-            <ul class="nav-menu">
-              <li><a href="#">Студия</a></li>
-              <li><a href="#">Клиенты</a></li>
-              <li><a href="#">Магазин</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-            <ul class="nav-user">
-              <li><a href="#">Корзина</a></li>
-            </ul>
+            <nav class="page-nav">
+              <ul>
+                <li><a href="#">Студия</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="user-block">
+              <a href="#">Корзина</a>
+            </div>
           </div>
-        </nav>
+        </div>
         <section class="slider">
           <input type="radio" name="slider-radio" id="slider-radio-1" checked>
           <input type="radio" name="slider-radio" id="slider-radio-2">
@@ -71,25 +73,19 @@
       <div class="container">
         <section class="features">
           <section class="features-item">
-            <div class="img-block">
-              <img src="img/web-sites.jpg" width="240" height="124" alt="Веб-сайты">
-            </div>
+            <img src="img/web-sites.jpg" width="240" height="124" alt="Веб-сайты">
             <h3>Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button features-button" href="#">Заказать</a>
           </section>
           <section class="features-item">
-            <div class="img-block">
-              <img src="img/apps.jpg" width="240" height="124" alt="Приложения">
-            </div>
+            <img src="img/apps.jpg" width="240" height="124" alt="Приложения">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStrore и Google Play</p>
             <a class="button features-button" href="#">Заказать</a>
           </section>
           <section class="features-item">
-            <div class="img-block">
-              <img src="img/presentations.jpg" width="240" height="124" alt="Презентации">
-            </div>
+            <img src="img/presentations.jpg" width="240" height="124" alt="Презентации">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="button features-button" href="#">Заказать</a>
@@ -98,38 +94,36 @@
         <hr>
         <section class="description clearfix">
           <img class="description-logo" src="img/bigger-logo.png" width="187" height="75" alt="Логотип Nerds">
-          <div class="description-general">
-            <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+          <div class="description-intro">
+            <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
             <p>
               Исповедуем принципы минимализма и чистоты.
               Ставим математический расчет выше креатива.
               Работаем не покладая рук, как роботы.
             </p>
           </div>
-
-          <div class="description-features clearfix">
-            <div class="description-features-left">
-              <span class="description-features-title">
+          <div class="description-general clearfix">
+            <div class="description-left">
+              <span class="description-general-title">
                 Выполняем заказы на разработку:
               </span>
-              <ul class="description-features-list">
+              <ul class="description-general-list">
                 	<li>Веб-сайтов любой сложности</li>
 	                <li>Мобильных приложений для iOS и Android</li>
 	                <li>Слайдшоу и видео для корпоративных презентаций</li>
               </ul>
             </div>
-            <div class="description-features-right">
-              <span class="description-features-title">
+            <div class="description-right">
+              <span class="description-general-title">
                 Как мы работаем:
               </span>
-              <ul class="description-features-list">
+              <ul class="description-general-list">
                 <li>С самоотдачей 146%</li>
                 <li>Соблюдая сроки на 100%</li>
                 <li>По предоплате 50%</li>
               </ul>
             </div>
           </div>
-
         </section>
         <hr>
         <section class="portfolio">
@@ -137,8 +131,8 @@
           <a class="portfolio-item" href="#"><img src="img/html-academy.png" width="199" height="68" alt="HTML Academy"></a>
           <a class="portfolio-item" href="#"><img src="img/borodinsky.png" width="209" height="86" alt="Barbershop"></a>
         </section>
+        <hr>
       </div>
-      <hr>
       <div class="map">
         <img src="img/map.jpg" width="1199" height="416" alt="Карта">
         <div class="contacts">
@@ -156,8 +150,8 @@
           <a href="#">Фейсбук</a>
           <a href="#">Инстаграм</a>
         </section>
-        <section class="footer-friends">
-          <span class="footer-friends-title">Давайте дружить, это выгодно!</span>
+        <section class="footer-info">
+          <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
       </div>

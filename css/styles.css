@@ -25,28 +25,33 @@ a {
   background-color: #eeeeee;
 }
 
-.page-nav {
+.page-menu {
   padding-top: 28px;
   margin-bottom: 36px;
 }
 
-.nav-logo,
-.nav-logo img {
+.page-logo,
+.page-logo img {
   width: 139px;
   height: 56px;
 }
 
-.nav-logo {
+.page-logo {
   float: left;
 }
 
 .nav-wrap {
   float: right;
   min-width: 560px;
+  padding-top: 30px;
 }
 
-.nav-menu,
-.nav-user {
+.page-nav {
+  float: left;
+  min-width: 400px;
+}
+
+.page-nav ul {
   padding: 0;
   margin: 0;
 
@@ -55,32 +60,25 @@ a {
   list-style: none;
 }
 
-.nav-menu {
-  float: left;
-  min-width: 400px;
-}
-.nav-user {
+.user-block {
   float: right;
   min-width: 160px;
   text-align: right;
 }
 
-.nav-menu > li,
-.nav-user > li {
+.page-nav li {
   display: inline-block;
-  padding-top: 30px;
   padding-right: 45px;
 
   vertical-align: bottom;
 }
 
-.nav-menu > li:last-of-type,
-.nav-user > li:last-of-type {
+.page-nav li:last-of-type {
   padding-right: 0;
 }
 
-.nav-menu a,
-.nav-user a {
+.page-nav a,
+.user-block a {
   padding-bottom: 5px;
 
   font-size: 14px;
@@ -89,19 +87,19 @@ a {
   color: #000000;
 }
 
-.nav-menu a:hover,
-.nav-user a:hover {
+.page-nav a:hover,
+.user-block a:hover {
   color: #fb565a;
 }
 
-.nav-menu a:active,
-.nav-user a:active {
+.page-nav a:active,
+.user-block a:active {
   color: #000000;
   opacity: 0.4;
 }
 
-.nav-menu a.selected,
-.nav-user a.selected {
+.page-nav a.selected,
+.user-block a.selected {
   color: #000000;
   box-shadow: 0 2px #fb565a;
 }
@@ -176,30 +174,27 @@ a {
   right: 0;
 }
 
-.description-general {
+.description-intro {
   float: left;
   width: 620px;
   margin-bottom: 40px;
 }
 
-.description h2 {
-  padding: 0;
-  margin: 0;
-
+.description b {
   font-size: 36px;
   line-height: 36px;
 }
 
-.description-features {
+.description-general {
   clear: both;
 }
 
-.description-features-left {
+.description-left {
   float: left;
   width: 620px;
 }
 
-.description-features-right {
+.description-right {
   float: right;
   width: 230px;
 }
@@ -267,7 +262,7 @@ a {
   border-radius: 50%;
 }
 
-.footer-friends {
+.footer-info {
   float: left;
   width: 560px;
 }
