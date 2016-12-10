@@ -1,0 +1,331 @@
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.list-horisontal {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+
+  list-style: none;
+}
+
+.list-horisontal > li {
+  display: inline-block;
+
+  font-size: 14px;
+
+  vertical-align: top;
+}
+
+.list-horisontal > li:last-child {
+  margin-right: 0;
+}
+
+.img-link {
+  display: inline-block;
+}
+
+.logo {
+  width: 185px;
+  height: 75px;
+}
+
+/***** INDEX PAGE *****/
+
+/*** Page header ***/
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.page-menu {
+  float: left;
+  width: 720px;
+}
+
+.user-block {
+  float: right;
+  width: 160px;
+}
+
+.menu-link {
+  font-size: 14px;
+}
+
+/* Main navigation */
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  width: 185px;
+  height: 75px;
+}
+
+.main-nav {
+  float: right;
+  min-width: 400px;
+}
+
+.main-nav > li {
+  margin-right: 45px;
+}
+
+
+/* User block */
+
+
+/* Slider */
+.sliders {
+  clear: both;
+}
+
+.slider {
+  display: none;
+  min-height: 312px;
+  margin-top: 50px;
+}
+
+.slider-content {
+  float: left;
+  width: 470px;
+}
+
+.sliders input[type="radio"] {
+  display: none;
+}
+
+#slider-radio-1[checked] ~ #slider-1 { display: block; }
+#slider-radio-2[checked] ~ #slider-2 { display: block; }
+#slider-radio-3[checked] ~ #slider-3 { display: block; }
+
+/*** Main content ***/
+
+.index-content-block {
+  border-bottom: 2px #eeeeee solid;
+}
+
+/* Features */
+
+.features {
+  padding: 80px 0;
+}
+
+.features-item {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+/* Description */
+
+.description {
+  position: relative;
+
+  padding: 70px 0;
+}
+
+.logo-small {
+  position: absolute;
+  top: 65px; /* not accurate */
+  right: 0;
+
+  width: 139px;
+  height: 56px;
+}
+
+.description-intro {
+  width: 620px;
+}
+
+.description-left {
+  float: left;
+  width: 620px;
+}
+
+.description-right {
+  float: right;
+  width: 240px;
+}
+
+/* Portfolio */
+
+.portfolio {
+  margin-bottom: 85px;
+  padding-top: 50px;
+  padding-bottom: 32px;
+
+  font-size: 0;
+}
+
+.portfolio-item {
+  display: inline-block;
+  margin-right: 80px;
+
+  vertical-align: middle;
+}
+
+.portfolio-item:last-child {
+  margin-right: 0;
+}
+
+.portfolio-item img {
+  width: 240px;
+  height: 90px;
+}
+
+/* Map */
+
+.map {
+  position: relative;
+
+  width: 1199px;
+  height: 416px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+}
+
+.map-image {
+  width: 1199px;
+  height: 416px;
+}
+
+.contacts {
+  position: absolute;
+  top: 70px;
+
+  width: 210px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+}
+
+/*** Page footer ***/
+
+.socials {
+  float: left;
+  width: 240px;
+}
+
+.discount {
+  float: right;
+  width: 560px;
+}
+
+
+/***** CATALOG PAGE *****/
+
+/*** Page header ***/
+
+.catalog-page .main-header {
+  margin-bottom: 75px;
+  padding-bottom: 90px;
+}
+
+.catalog-page .menu-wrap {
+  margin-bottom: 65px;
+}
+
+.catalog-page h1 {
+  width: 640px;
+  margin: 0 auto;
+}
+
+/*** Main content ***/
+
+.catalog-page-aside {
+  float:left;
+  width: 240px;
+}
+
+.catalog-page-content {
+  float: right;
+  width: 560px;
+}
+
+/* Filter */
+
+/* Sort */
+
+.sort {
+  margin-bottom: 20px;
+}
+
+.sort-type-wrapper {
+  float: left;
+  width: 480px;
+}
+
+.sort-direction-wrapper {
+  float: right;
+  width: 30px;
+}
+
+.sort-types {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.sort-types > li {
+  margin-right: 45px;
+}
+
+
+/* Catalog */
+
+.catalog {
+  margin-bottom: 80px;
+
+  font-size: 0;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalog-item-body {
+  /*position: relative;*/
+}
+
+.catalog-item-image {
+  width: 240px;
+  height: 240px;
+}
+
+.catalog-item-info {
+  /*position: absolute;
+  left: 0;
+  right: 0;*/
+  display: none;
+}
+
+/* Paginator */
+
+
+.paginator-list > li {
+  margin-right: 10px;
+}
