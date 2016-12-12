@@ -6,42 +6,45 @@
     <link rel="stylesheet" href="css/styles1.css">
     <title>Nerds. Дизайн-студия</title>
   </head>
+
+
   <body>
     <header class="main-header">
       <div class="container">
-        <div class="menu">
-          <nav class="main-nav">
-            <div class="logo-wrapper">
-              <a class="logo-big"><img src="img/logo-big.png" width="185" height="75" alt="Логотип Nerds"></a>
-            </div>
-            <ul class="main-nav-list">
-              <li class="main-nav-item"><a class="main-nav-link menu-link" href="#">Студия</a></li>
-              <li class="main-nav-item"><a class="main-nav-link menu-link" href="#">Клиенты</a></li>
-              <li class="main-nav-item"><a class="main-nav-link menu-link" href="catalog-1.html">Магазин</a></li>
-              <li class="main-nav-item"><a class="main-nav-link menu-link" href="#">Контакты</a></li>
+        <div class="page-menu clearfix">
+          <nav class="site-nav clearfix">
+            <a class="site-nav-logo">
+              <img src="img/logo-big.png" width="185" height="75" alt="Логотип Nerds">
+            </a>
+            <ul class="site-nav-list inline-list">
+              <li><a class="page-menu-link" href="#">Студия</a></li>
+              <li><a class="page-menu-link" href="#">Клиенты</a></li>
+              <li><a class="page-menu-link" href="catalog-1.html">Магазин</a></li>
+              <li><a class="page-menu-link" href="#">Контакты</a></li>
             </ul>
           </nav>
-          <div class="user">
-            <a class="user-link menu-link" href="#">Корзина</a>
+          <div class="user-block">
+            <a class="user-block-link page-menu-link" href="#">Корзина</a>
           </div>
         </div>
+
         <section class="slider">
-          <input type="radio" name="slider-radio" value="1" id="slider-radio-1">
-          <input type="radio" name="slider-radio" value="2" id="slider-radio-2">
-          <input type="radio" name="slider-radio" value="3" id="slider-radio-3">
+          <input class="notvisible" id="slider-radio-1" type="radio" name="slider-radio" value="1">
+          <input class="notvisible" id="slider-radio-2" type="radio" name="slider-radio" value="2">
+          <input class="notvisible" id="slider-radio-3" type="radio" name="slider-radio" value="3">
           <div class="slider-block" id="slider-block-1">
-            <h2>Долго, дорого, скрупулезно.</h2>
+            <b class="slider-lead">Долго, дорого, скрупулезно.</b>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
             <a class="btn slider-btn" href="#">Узнать больше</a>
           </div>
           <div class="slider-block" id="slider-block-2">
-            <h2>Любите ли вы математику, как любим ее мы?</h2>
+            <b class="slider-lead">Любите ли вы математику, как любим ее мы?</b>
             <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив,
               чтобы дать им возможность все просчитать</p>
             <a class="btn slider-btn" href="#">Узнать больше</a>
           </div>
           <div class="slider-block" id="slider-block-3">
-            <h2>Только наркотики, только хардкор!</h2>
+            <b class="slider-lead">Только наркотики, только хардкор!</b>
             <p>Все дизайнерские решения в нашей компании принимаются
               только под воздействием качественных галлюциногенов</p>
             <a class="btn slider-btn" href="#">Узнать больше</a>
@@ -54,8 +57,10 @@
         </section>
       </div>
     </header>
+
+
     <main class="container">
-      <section class="features">
+      <section class="features index-content-block clearfix">
         <div class="features-item">
           <img src="img/web-sites.jpg" width="240" height="124" alt="Веб-сайты">
           <h2>Веб-сайты</h2>
@@ -75,56 +80,64 @@
           <a class="btn features-btn" href="#"></a>
         </div>
       </section>
-      <section class="description">
-        <img class="logo-small" src="img/logo-small.png" width="139" height="56" alt="Логотип Nerds">
+
+      <section class="description index-content-block clearfix">
+        <a class="description-logo"><img src="img/logo-small.png" width="139" height="56" alt="Логотип Nerds"></a>
         <div class="description-intro">
           <b class="description-lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
           <p>Исповедуем принципы минимализма и чистоты.
             Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
         </div>
         <div class="description-left">
-          <p class="description-title">Выполняем заказы на разработку:</p>
+          <p class="description-legend">Выполняем заказы на разработку:</p>
           <ul class="description-list">
-            <li class="description-item">Веб-сайтов любой сложности</li>
-            <li class="description-item">Мобильных приложений для iOS и Android</li>
-            <li class="description-item">Слайдшоу и видео для корпоративных презентаций</li>
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
         <div class="description-right">
-          <p class="description-title">Как мы работаем:</p>
+          <p class="description-legend">Как мы работаем:</p>
           <ul class="description-list">
-            <li class="description-item">С самоотдачей 146%</li>
-            <li class="description-item">Соблюдая сроки на 100%</li>
-            <li class="description-item">По предоплате 50%</li>
+            <li>С самоотдачей 146%</li>
+            <li>Соблюдая сроки на 100%</li>
+            <li>По предоплате 50%</li>
           </ul>
         </div>
       </section>
-      <section class="portfolio">
-        <a class="portfolio-item" href="#"><img src="img/glukhanko.png" width="198" height="37" alt="Glukhanko веб-сайт"></a>
-        <a class="portfolio-item" href="#"><img src="img/html-academy.png" width="199" height="68" alt="Html academy веб-сайт"></a>
-        <a class="portfolio-item" href="#"><img src="img/borodinsky.png" width="209" height="86" alt="Borodinsky веб-сайт"></a>
+
+      <section class="portfolio index-content-block clearfix">
+        <a class="portfolio-item" href="#"><img src="img/glukhanko.png" width="240" height="90" alt="Glukhanko веб-сайт"></a>
+        <a class="portfolio-item" href="#"><img src="img/html-academy.png" width="240" height="90" alt="Html academy веб-сайт"></a>
+        <a class="portfolio-item" href="#"><img src="img/borodinsky.png" width="240" height="90" alt="Borodinsky веб-сайт"></a>
       </section>
     </main>
+
+
     <section class="map">
-      <img src="img/map.jpg" width="1199" height="416" alt="Карта проезда">
-      <div class="contacts">
-        <div class="contacts-title">NЁRDS DESIGN STUDIO</div>
-        <p class="contacts-detail">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="contacts-detail">тел. +7 (812) 275-75-75</p>
-        <a class="btn contacts-btn" href="#">Напишите нам</a>
+      <img class="map-image" src="img/map.jpg" width="1199" height="416" alt="Карта проезда">
+      <div class="container">
+        <div class="contacts">
+          <div class="contacts-title">NЁRDS DESIGN STUDIO</div>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn contacts-btn" href="#">Напишите нам</a>
+        </div>
       </div>
     </section>
-    <footer class="main-footer container">
+
+
+    <footer class="main-footer container clearfix">
       <div class="socials">
         <a class="socials-item socials-item-vk" href="#">vk</a>
         <a class="socials-item socials-item-fb" href="#">facebook</a>
         <a class="socials-item socials-item-inst" href="#">instagram</a>
       </div>
+
       <div class="discount">
         <b class="discount-lead">Давайте дружить, это выгодно!</b>
-        <p class="discount-details">Скидка 10% для друзей из социальных сетей.</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
-    </footer>
     </footer>
   </body>
 </html>
