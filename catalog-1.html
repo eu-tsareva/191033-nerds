@@ -6,30 +6,28 @@
     <link rel="stylesheet" href="css/styles1.css">
     <title>Nerds. Магазин</title>
   </head>
-  <body>
+  <body class="catalog-page">
     <header class="main-header">
       <div class="container">
-        <div class="menu">
-          <nav class="main-nav">
-            <div class="logo-wrapper">
-              <a  class="logo-big" href="index-1.html"><img src="img/logo-big.png" width="185" height="75" alt="Логотип Nerds"></a>
-            </div>
-            <ul class="main-nav-list">
-              <li class="main-nav-item"><a class="main-nav-link menu-link" href="#">Студия</a></li>
-              <li class="main-nav-item"><a class="main-nav-link menu-link" href="#">Клиенты</a></li>
-              <li class="main-nav-item"><a class="main-nav-link menu-link menu-link-active">Магазин</a></li>
-              <li class="main-nav-item"><a class="main-nav-link menu-link" href="#">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="user">
-            <a class="user-link menu-link" href="#">Корзина</a>
+        <nav class="page-menu clearfix">
+          <div class="logo">
+            <a class="img-link" href="index-1.html"><img src="img/logo-big.png" width="185" height="75" alt="Логотип Nerds"></a>
           </div>
+          <ul class="main-nav list-horisontal">
+            <li><a class="menu-link" href="#">Студия</a></li>
+            <li><a class="menu-link" href="#">Клиенты</a></li>
+            <li><a class="menu-link menu-link-active">Магазин</a></li>
+            <li><a class="menu-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="cart-link menu-link" href="#">Корзина</a>
         </div>
-        <div class="greeting">Добро пожаловать в магазин готовых макетов</div>
+        <h1>Добро пожаловать в магазин готовых макетов</h1>
       </div>
     </header>
-    <main class="container">
-    <div class="left-column">
+    <main class="container clearfix">
+    <aside class="catalog-page-aside">
       <form class="filter-form" action="http://htmlacademy/echo" method="get">
         <fieldset class="form-fieldset">
           <legend class="form-legend">Стоимость:</legend>
@@ -60,18 +58,20 @@
         </fieldset>
         <button class="btn filter-btn" type="submit">Показать</button>
       </form>
-    </div>
-    <div class="right-column">
-      <div class="sort">
-        <span class="sort-legend">Сортировать:</span>
-        <ul class="sort-list">
-          <li class="sort-item"><a class="sort-link" href="#">По цене</a></li>
-          <li class="sort-item"><a class="sort-link" href="#">По типу</a></li>
-          <li class="sort-item"><a class="sort-link" href="#">По функционалу</a></li>
-        </ul>
-        <div class="sort-direction-types">
-          <a class="sort-direction sort-direction-desc" href="#"></a>
-          <a class="sort-direction sort-direction-asc" href="#"></a>
+    </aside>
+    <div class="catalog-page-content">
+      <div class="sort clearfix">
+        <div class="sort-type-wrapper">
+          <span class="sort-legend">Сортировать:</span>
+          <ul class="sort-types list-horisontal">
+            <li><a class="sort-link" href="#">По цене</a></li>
+            <li><a class="sort-link" href="#">По типу</a></li>
+            <li><a class="sort-link" href="#">По функционалу</a></li>
+          </ul>
+        </div>
+        <div class="sort-direction-wrapper">
+          <a class="sort-direction sort-direction-desc" href="#">d</a>
+          <a class="sort-direction sort-direction-asc" href="#">u</a>
         </div>
       </div>
       <section class="catalog">
@@ -83,12 +83,12 @@
               <div class="browser-control"></div>
             </div>
           </div>
-          <div class="catalog-item-image">
-            <img src="img/aviator.jpg" width="240" height="240" alt="Макет Aviator">
+          <div class="catalog-item-body">
+            <img class="catalog-item-image" src="img/aviator.jpg" width="240" height="240" alt="Макет Aviator">
             <div class="catalog-item-info">
-              <h2 class="catalog-item-name">Aviator</h2>
-              <p class="catalog-item-description">Одностраничный макет с авторским дизайном</p>
-              <a class="btn buy-btn" href="#">8000 Р.</a>
+              <h2>Aviator</h2>
+              <p>Одностраничный макет с авторским дизайном</p>
+              <a class="btn catalog-btn" href="#">8000 Р.</a>
             </div>
           </div>
         </article>
@@ -100,12 +100,12 @@
               <div class="browser-control"></div>
             </div>
           </div>
-          <div class="catalog-item-image">
-            <img src="img/sunset.jpg" width="240" height="240" alt="Макет Sunset">
+          <div class="catalog-item-body">
+            <img class="catalog-item-image" src="img/sunset.jpg" width="240" height="240" alt="Макет Sunset">
             <div class="catalog-item-info">
-              <h2 class="catalog-item-name">Sunset</h2>
-              <p class="catalog-item-description">Интернет-магазин с личным кабинетом</p>
-              <a class="btn buy-btn" href="#">10000 Р.</a>
+              <h2>Sunset</h2>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <a class="btn catalog-btn" href="#">10000 Р.</a>
             </div>
           </div>
         </article>
@@ -117,12 +117,12 @@
               <div class="browser-control"></div>
             </div>
           </div>
-          <div class="catalog-item-image">
-            <img src="img/forte.jpg" width="240" height="240" alt="Макет Forte">
+          <div class="catalog-item-body">
+            <img class="catalog-item-image" src="img/forte.jpg" width="240" height="240" alt="Макет Forte">
             <div class="catalog-item-info">
-              <h2 class="catalog-item-name">Forte</h2>
-              <p class="catalog-item-description">Отличный макет для личного блога</p>
-              <a class="btn buy-btn" href="#">5000 Р.</a>
+              <h2>Forte</h2>
+              <p>Отличный макет для личного блога</p>
+              <a class="btn catalog-btn" href="#">5000 Р.</a>
             </div>
           </div>
         </article>
@@ -134,12 +134,12 @@
               <div class="browser-control"></div>
             </div>
           </div>
-          <div class="catalog-item-image">
-            <img src="img/thai.jpg" width="240" height="240" alt="Макет Modern organic thai">
+          <div class="catalog-item-body">
+            <img class="catalog-item-image" src="img/thai.jpg" width="240" height="240" alt="Макет Modern organic thai">
             <div class="catalog-item-info">
-              <h2 class="catalog-item-name">Modern organic thai</h2>
-              <p class="catalog-item-description">Сайт для ресторана быстрого питания</p>
-              <a class="btn buy-btn" href="#">12000 Р.</a>
+              <h2>Modern organic thai</h2>
+              <p>Сайт для ресторана быстрого питания</p>
+              <a class="btn catalog-btn" href="#">12000 Р.</a>
             </div>
           </div>
         </article>
@@ -151,12 +151,12 @@
               <div class="browser-control"></div>
             </div>
           </div>
-          <div class="catalog-item-image">
-            <img src="img/avenue.jpg" width="239" height="240" alt="Макет Avenue">
+          <div class="catalog-item-body">
+            <img class="catalog-item-image" src="img/avenue.jpg" width="240" height="240" alt="Макет Avenue">
             <div class="catalog-item-info">
-              <h2 class="catalog-item-name">Avenue</h2>
-              <p class="catalog-item-description">Макет для блога о путешествиях</p>
-              <a class="btn buy-btn" href="#">8000 Р.</a>
+              <h2>Avenue</h2>
+              <p>Макет для блога о путешествиях</p>
+              <a class="btn catalog-btn" href="#">8000 Р.</a>
             </div>
           </div>
         </article>
@@ -168,36 +168,38 @@
               <div class="browser-control"></div>
             </div>
           </div>
-          <div class="catalog-item-image">
-            <img src="img/dovetail.jpg" width="239" height="240" alt="Макет Dovetail">
+          <div class="catalog-item-body">
+            <img class="catalog-item-image" src="img/dovetail.jpg" width="240" height="240" alt="Макет Dovetail">
             <div class="catalog-item-info">
-              <h2 class="catalog-item-name">Dovetail</h2>
-              <p class="catalog-item-description">Интернет-магазин с галереей товаров</p>
-              <a class="btn buy-btn" href="#">14000 Р.</a>
+              <h2>Dovetail</h2>
+              <p>Интернет-магазин с галереей товаров</p>
+              <a class="btn catalog-btn" href="#">14000 Р.</a>
             </div>
           </div>
         </article>
       </section>
       <section class="paginator">
-        <ul class="paginator-list">
-          <li class="paginator-item"><a class="paginator-link paginator-link-active">1</a></li>
-          <li class="paginator-item"><a class="paginator-link" href="#">2</a></li>
-          <li class="paginator-item"><a class="paginator-link" href="#">3</a></li>
-          <li class="paginator-item"><a class="paginator-link" href="#">Следующая</a></li>
+        <ul class="paginator-list list-horisontal">
+          <li><a class="paginator-link paginator-link-active">1</a></li>
+          <li><a class="paginator-link" href="#">2</a></li>
+          <li><a class="paginator-link" href="#">3</a></li>
+          <li><a class="paginator-link" href="#">Следующая</a></li>
         </ul>
       </section>
     </div>
     </main>
     <section class="map">
       <img src="img/map.jpg" width="1199" height="416" alt="Карта проезда">
-      <div class="contacts">
-        <div class="contacts-title">NЁRDS DESIGN STUDIO</div>
-        <p class="contacts-detail">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="contacts-detail">тел. +7 (812) 275-75-75</p>
-        <a class="btn contacts-btn" href="#">Напишите нам</a>
+      <div class="container">
+        <div class="contacts">
+          <div class="contacts-title">NЁRDS DESIGN STUDIO</div>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn contacts-btn" href="#">Напишите нам</a>
+        </div>
       </div>
     </section>
-    <footer class="main-footer container">
+    <footer class="main-footer container clearfix">
       <div class="socials">
         <a class="socials-item socials-item-vk" href="#">vk</a>
         <a class="socials-item socials-item-fb" href="#">facebook</a>
@@ -205,7 +207,7 @@
       </div>
       <div class="discount">
         <b class="discount-lead">Давайте дружить, это выгодно!</b>
-        <p class="discount-details">Скидка 10% для друзей из социальных сетей.</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
   </body>
