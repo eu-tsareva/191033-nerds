@@ -10,6 +10,7 @@ body {
   background-color: #ffffff;
 }
 
+
 @font-face {
   font-weight: normal;
   font-style: normal;
@@ -191,8 +192,11 @@ body {
 }
 
 .user-block-icon {
+  margin-right: 10px;
+
+  font-size: 16px;
+
   opacity: 0.3;
-  margin-right: 13px;
 }
 
 .user-block-link:hover .user-block-icon {
@@ -331,6 +335,45 @@ body {
   margin-right: 0;
 }
 
+.features-img {
+  display: block;
+  width: 240px;
+  height: 124px;
+  margin-bottom: 23px;
+}
+
+.features-item h2 {
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.features-item p {
+  margin: 0;
+  margin-top: 10px;
+
+  font-size: 15px;
+}
+
+.features-btn {
+  margin-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.features-item-apps .features-btn {
+  background-color: #00ca74;
+}
+
+.features-item-present .features-btn {
+  background-color: #efc84a;
+}
+
 /* Description */
 
 .description {
@@ -341,15 +384,31 @@ body {
 
 .description-logo {
   position: absolute;
-  top: 65px; /* not accurate */
+  top: 60px;
   right: 0;
 
-  width: 139px;
-  height: 56px;
+  width: 240px;
+  height: 119px;
 }
 
 .description-intro {
-  width: 620px;
+  width: 570px;
+  margin-bottom: 45px;
+  padding-right: 50px;
+}
+
+.description-lead {
+  display: block;
+  margin-bottom: 17px;
+
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.description-intro p {
+  margin: 0;
+  margin-top: 7px;
 }
 
 .description-left {
@@ -362,25 +421,73 @@ body {
   width: 240px;
 }
 
+.description-legend {
+  margin-bottom: 22px;
+
+  text-transform: uppercase;
+}
+
+.description-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.description-list li {
+  position: relative;
+
+  display: inline-block;
+  margin-bottom: 22px;
+  padding-left: 36px;
+}
+
+.description-list li:last-child {
+  margin-bottom: 0;
+}
+
+.description-list li::before {
+  content: "";
+
+  position: absolute;
+  left:0;
+  top: 50%;
+
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin-top: -1px;
+
+  background-color: #fb565a;
+}
+
 /* Portfolio */
 
 .portfolio {
   margin-bottom: 85px;
-  padding-top: 50px;
-  padding-bottom: 32px;
+  padding-top: 46px;
+  padding-bottom: 31px;
 }
 
 .portfolio-item {
   float: left;
   width: 240px;
   margin-right: 80px;
+
+  opacity: 0.2;
 }
 
 .portfolio-item:last-child {
   margin-right: 0;
 }
 
+.portfolio-item:hover,
+.portfolio-item:active {
+  opacity: 1;
+}
+
 .portfolio-item img {
+  display: block;
   width: 240px;
   height: 90px;
 }
@@ -394,7 +501,6 @@ body {
   height: 416px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 75px;
 }
 
 .map-image {
@@ -404,25 +510,103 @@ body {
 
 .contacts {
   position: absolute;
-  top: 70px;
+  top: 50%;
 
   width: 210px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 25px;
+  padding: 25px 20px;
+
+  color: #666666;
+  background-color: #ffffff;
+
+  transform: translateY(-50%);
+}
+
+.contacts-title {
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  margin: 0;
+  margin-bottom: 20px;
+
+  line-height: 20px;
+}
+
+.contacts p:last-of-type {
+  margin-bottom: 30px;
+}
+
+.contacts-btn {
+  width: 100%;
+
+  text-align: center;
 }
 
 /*** Page footer ***/
+
+.main-footer {
+  padding: 75px 0;
+}
 
 .socials {
   float: left;
   width: 240px;
 }
 
+.socials-item {
+  display: inline-block;
+  width: 62px;
+  height: 62px;
+  margin-right: 27px;
+
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.socials-item:last-child {
+  margin-right: 0;
+}
+
+.socials-icon {
+  font-size: 23px;
+  line-height: 62px;
+}
+
+.socials-item:hover {
+  background-color: #fb565a;
+}
+
+.socials-item:active {
+  background-color: #d6494d;
+  box-shadow: inset 0 3px rgba(0, 0, 0, 0.15);
+}
+
 .discount {
   float: right;
   width: 560px;
+}
+
+.discount-lead {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.discount p {
+  margin: 0;
 }
 
 
