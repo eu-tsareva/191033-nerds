@@ -615,17 +615,24 @@ body {
 /*** Page header ***/
 
 .catalog-page .main-header {
-  margin-bottom: 75px;
-  padding-bottom: 90px;
+  margin-bottom: 65px;
+  padding-bottom: 80px;
 }
 
 .catalog-page .page-menu {
-  margin-bottom: 65px;
+  margin-bottom: 64px;
 }
 
 .catalog-page h1 {
-  width: 640px;
+  width: 700px;
   margin: 0 auto;
+
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
 }
 
 /*** Main content ***/
@@ -640,7 +647,199 @@ body {
   width: 560px;
 }
 
-/* Filter */
+/* Filter form */
+
+.filter-form-fieldset {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 15px 0;
+
+  border: none;
+}
+
+.filter-form-legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter-form input[type="text"] {
+  font: inherit;
+  text-align: center;
+
+  background-color: #f1f1f1;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+}
+
+/* Filter form price range */
+
+.filter-form-range {
+  margin-bottom: 14px;
+  padding: 39px 20px;
+
+  background-color: #f1f1f1;
+  border-radius: 2px;
+}
+
+.range-whole {
+  width: 100%;
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.range-selected {
+  position: relative;
+
+  width: 160px;
+  height: 2px;
+
+  background-color: #00ca74;
+}
+
+.range-selected::before,
+.range-selected::after {
+  position: absolute;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  background-image: radial-gradient(#ababab 0, #ababab 2px, #ffffff 3px, #ffffff 100%);
+  border-radius: 50%;
+  box-shadow: 0 2px #e1e1e1;
+  cursor: pointer;
+
+  content: "";
+}
+
+.range-selected::before {
+  left: 0;
+  top: 50%;
+
+  margin-top: -10px;
+}
+
+.range-selected::after {
+  left: 140px;
+  top: 50%;
+
+  margin-top: -10px;
+}
+
+.filter-form-price input[type="text"] {
+  width: 80px;
+  height: 38px;
+  margin-left: 10px;
+
+  line-height: 38px;
+}
+
+.price-from {
+  float: left;
+  width: 110px;
+}
+
+.price-to {
+  float: right;
+  width: 115px;
+}
+
+/* Filter form controls list */
+
+.filter-form-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.filter-form-list li {
+  margin-bottom: 20px;
+}
+
+.filter-form-list li:last-child {
+  margin-bottom: 0;
+}
+
+.filter-form-control {
+  display: none;
+}
+
+.filter-form-label {
+  position: relative;
+
+  display: inline-block;
+  padding-left: 35px;
+
+  cursor: pointer;
+}
+
+.filter-form-label::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  width: 28px;
+  height: 28px;
+
+  font-family: "symbols-nerds";
+  font-size: 28px;
+  line-height: 1em;
+
+  color: #c1c1c1;
+
+  speak: none;
+  transform: translateY(-50%);
+}
+
+.radio-label::before {
+  content: "\25cb";
+}
+
+.checkbox-label::before {
+  content: "\2610";
+}
+
+.filter-form-radio:checked + .radio-label::before {
+  content: "\25cf";
+}
+
+.filter-form-checkbox:checked + .checkbox-label::before {
+  content: "\2611";
+}
+
+/* Filter form button */
+
+.filter-form-btn {
+  margin-top: 10px;
+  padding: 10px 48px;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f1f1f1;
+  border-radius: 2px;
+  border: 0;
+  outline: 0;
+}
+
+.filter-form-btn:hover {
+  background-color: #e5e5e5;
+}
+
+.filter-form-btn:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px #b5b5b5;
+}
 
 /* Sort */
 

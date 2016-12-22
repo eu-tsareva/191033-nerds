@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles1.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Nerds. Магазин</title>
   </head>
 
@@ -37,34 +37,63 @@
     <main class="container clearfix">
     <aside class="catalog-page-aside">
       <form class="filter-form" action="http://htmlacademy/echo" method="get">
-        <fieldset class="form-fieldset">
-          <legend class="form-legend">Стоимость:</legend>
-          <div class="range">
-            <div class="range-whole"></div>
-            <div class="range-selected"></div>
+        <fieldset class="filter-form-fieldset">
+          <legend class="filter-form-legend">Стоимость:</legend>
+          <div class="range filter-form-range">
+            <div class="range-whole">
+              <div class="range-selected"></div>
+            </div>
           </div>
-          <label for="price-from">От<input class="price-input" id="price-from" type="text" name="price-from" value="0"></label>
-          <label for="price-to">До<input class="price-input" id="price-to" type="text" name="price-to" value="15000"></label>
+          <div class="price filter-form-price clearfix">
+            <label class="price-from">от<input id="price-from-field" type="text" name="price-from" value="0"></label>
+            <label  class="price-to">до<input id="price-to-field" type="text" name="price-to" value="15000"></label>
+          </div>
         </fieldset>
-        <fieldset class="form-fieldset">
-          <legend class="form-legend">Сетка:</legend>
-          <ul class="form-list">
-            <li class="form-list-item"><input id="layout-adaptive" type="radio" name="layout" value="layout-adaptive"><label class="form-list-label" for="layout-adaptive">Адаптивная</label></li>
-            <li class="form-list-item"><input id="layout-fixed" type="radio" name="layout" value="layout-fixed"><label class="form-list-label" for="layout-fixed">Фиксированная</label></li>
-            <li class="form-list-item"><input id="layout-responsive" type="radio" name="layout" value="layout-responsive"><label class="form-list-label" for="layout-responsive">Резиновая</label></li>
+
+        <fieldset class="filter-form-fieldset">
+          <legend class="filter-form-legend">Сетка:</legend>
+          <ul class="filter-form-list">
+            <li>
+              <input class="filter-form-control filter-form-radio" id="layout-adaptive-radio" type="radio" name="layout" value="layout-adaptive" checked>
+              <label class="filter-form-label radio-label" for="layout-adaptive-radio">Адаптивная</label>
+            </li>
+            <li>
+              <input class="filter-form-control filter-form-radio" id="layout-fixed-radio" type="radio" name="layout" value="layout-fixed">
+              <label class="filter-form-label radio-label" for="layout-fixed-radio">Фиксированная</label>
+            </li>
+            <li>
+              <input class="filter-form-control filter-form-radio" id="layout-responsive-radio" type="radio" name="layout" value="layout-responsive">
+              <label class="filter-form-label radio-label" for="layout-responsive-radio">Резиновая</label>
+            </li>
           </ul>
         </fieldset>
-        <fieldset class="form-fieldset">
-          <legend class="form-legend">Особенности:</legend>
-          <ul class="form-list">
-            <li class="form-list-item"><input id="features-slider" type="checkbox" name="features-slider"><label class="form-list-label" for="features-slider">Слайдер</label></li>
-            <li class="form-list-item"><input id="features-pros" type="checkbox" name="features-pros"><label class="form-list-label" for="features-pros">Блок преимуществ</label></li>
-            <li class="form-list-item"><input id="features-news" type="checkbox" name="features-news"><label class="form-list-label" for="features-news">Новости</label></li>
-            <li class="form-list-item"><input id="features-gallery" type="checkbox" name="features-gallery"><label class="form-list-label" for="features-gallery">Галерея</label></li>
-            <li class="form-list-item"><input id="features-cart" type="checkbox" name="features-cart"><label class="form-list-label" for="features-cart">Корзина</label></li>
+
+        <fieldset class="filter-form-fieldset">
+          <legend class="filter-form-legend">Особенности:</legend>
+          <ul class="filter-form-list">
+            <li>
+              <input class="filter-form-control filter-form-checkbox" id="features-slider-checkbox" type="checkbox" name="features-slider">
+              <label class="filter-form-label checkbox-label" for="features-slider-checkbox">Слайдер</label>
+            </li>
+            <li>
+              <input class="filter-form-control filter-form-checkbox" id="features-pros-checkbox" type="checkbox" name="features-pros">
+              <label class="filter-form-label checkbox-label" for="features-pros-checkbox">Блок преимуществ</label>
+            </li>
+            <li>
+              <input class="filter-form-control filter-form-checkbox" id="features-news-checkbox" type="checkbox" name="features-news">
+              <label class="filter-form-label checkbox-label" for="features-news-checkbox">Новости</label>
+            </li>
+            <li>
+              <input class="filter-form-control filter-form-checkbox" id="features-gallery-checkbox" type="checkbox" name="features-gallery">
+              <label class="filter-form-label checkbox-label" for="features-gallery-checkbox">Галерея</label>
+            </li>
+            <li>
+              <input class="filter-form-control filter-form-checkbox" id="features-cart-checkbox" type="checkbox" name="features-cart">
+              <label class="filter-form-label checkbox-label" for="features-cart-checkbox">Корзина</label>
+            </li>
           </ul>
         </fieldset>
-        <button class="btn filter-btn" type="submit">Показать</button>
+        <button class="filter-form-btn" type="submit">Показать</button>
       </form>
     </aside>
 
