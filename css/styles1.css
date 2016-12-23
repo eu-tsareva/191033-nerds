@@ -615,7 +615,7 @@ body {
 /*** Page header ***/
 
 .catalog-page .main-header {
-  margin-bottom: 65px;
+  margin-bottom: 75px;
   padding-bottom: 80px;
 }
 
@@ -651,13 +651,15 @@ body {
 
 .filter-form-fieldset {
   margin: 0;
-  margin-bottom: 50px;
-  padding: 15px 0;
+  margin-bottom: 45px;
+  padding: 0;
 
   border: none;
 }
 
 .filter-form-legend {
+  margin-bottom: 15px;
+
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -665,6 +667,9 @@ body {
 }
 
 .filter-form input[type="text"] {
+  margin: 0;
+  padding: 0;
+
   font: inherit;
   text-align: center;
 
@@ -738,14 +743,19 @@ body {
   line-height: 38px;
 }
 
+.price-from,
+.price-to {
+  max-width: 115px;
+
+  text-transform: uppercase;
+}
+
 .price-from {
   float: left;
-  width: 110px;
 }
 
 .price-to {
   float: right;
-  width: 115px;
 }
 
 /* Filter form controls list */
@@ -758,7 +768,7 @@ body {
 }
 
 .filter-form-list li {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .filter-form-list li:last-child {
@@ -817,7 +827,7 @@ body {
 /* Filter form button */
 
 .filter-form-btn {
-  margin-top: 10px;
+  margin-top: 12px;
   padding: 10px 48px;
 
   font-size: 12px;
