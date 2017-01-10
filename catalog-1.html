@@ -108,19 +108,17 @@
           </ul>
         </div>
         <div class="sort-direction-wrapper">
-          <a class="sort-direction sort-direction-desc" href="#"></a>
-          <a class="sort-direction sort-direction-asc" href="#"></a>
+          <a class="sort-direction sort-direction-active" href="#"><span class="icon-down-dir"></span></a>
+          <a class="sort-direction" href="#"><span class="icon-up-dir"></span></a>
         </div>
       </div>
 
       <section class="catalog">
         <article class="catalog-item">
           <div class="browser">
-            <div class="browser-controls">
-              <div class="browser-control"></div>
-              <div class="browser-control"></div>
-              <div class="browser-control"></div>
-            </div>
+            <div class="browser-control"></div>
+            <div class="browser-control"></div>
+            <div class="browser-control"></div>
           </div>
           <div class="catalog-item-body">
             <img class="catalog-item-image" src="img/aviator.jpg" width="240" height="240" alt="Макет Aviator">
@@ -133,11 +131,9 @@
         </article>
         <article class="catalog-item">
           <div class="browser">
-            <div class="browser-controls">
-              <div class="browser-control"></div>
-              <div class="browser-control"></div>
-              <div class="browser-control"></div>
-            </div>
+            <div class="browser-control"></div>
+            <div class="browser-control"></div>
+            <div class="browser-control"></div>
           </div>
           <div class="catalog-item-body">
             <img class="catalog-item-image" src="img/sunset.jpg" width="240" height="240" alt="Макет Sunset">
@@ -150,11 +146,9 @@
         </article>
         <article class="catalog-item">
           <div class="browser">
-            <div class="browser-controls">
-              <div class="browser-control"></div>
-              <div class="browser-control"></div>
-              <div class="browser-control"></div>
-            </div>
+            <div class="browser-control"></div>
+            <div class="browser-control"></div>
+            <div class="browser-control"></div>
           </div>
           <div class="catalog-item-body">
             <img class="catalog-item-image" src="img/forte.jpg" width="240" height="240" alt="Макет Forte">
@@ -167,11 +161,9 @@
         </article>
         <article class="catalog-item">
           <div class="browser">
-            <div class="browser-controls">
-              <div class="browser-control"></div>
-              <div class="browser-control"></div>
-              <div class="browser-control"></div>
-            </div>
+            <div class="browser-control"></div>
+            <div class="browser-control"></div>
+            <div class="browser-control"></div>
           </div>
           <div class="catalog-item-body">
             <img class="catalog-item-image" src="img/thai.jpg" width="240" height="240" alt="Макет Modern organic thai">
@@ -184,11 +176,9 @@
         </article>
         <article class="catalog-item">
           <div class="browser">
-            <div class="browser-controls">
-              <div class="browser-control"></div>
-              <div class="browser-control"></div>
-              <div class="browser-control"></div>
-            </div>
+            <div class="browser-control"></div>
+            <div class="browser-control"></div>
+            <div class="browser-control"></div>
           </div>
           <div class="catalog-item-body">
             <img class="catalog-item-image" src="img/avenue.jpg" width="240" height="240" alt="Макет Avenue">
@@ -201,11 +191,9 @@
         </article>
         <article class="catalog-item">
           <div class="browser">
-            <div class="browser-controls">
-              <div class="browser-control"></div>
-              <div class="browser-control"></div>
-              <div class="browser-control"></div>
-            </div>
+            <div class="browser-control"></div>
+            <div class="browser-control"></div>
+            <div class="browser-control"></div>
           </div>
           <div class="catalog-item-body">
             <img class="catalog-item-image" src="img/dovetail.jpg" width="240" height="240" alt="Макет Dovetail">
@@ -220,10 +208,10 @@
 
       <section class="paginator">
         <ul class="paginator-list inline-list">
-          <li><a class="paginator-link-active">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
+          <li><a class="paginator-link paginator-link-active">1</a></li>
+          <li><a class="paginator-link" href="#">2</a></li>
+          <li><a class="paginator-link" href="#">3</a></li>
+          <li><a class="paginator-link paginator-link-next" href="#">Следующая</a></li>
         </ul>
       </section>
     </div>
@@ -245,14 +233,16 @@
 
     <footer class="main-footer container clearfix">
       <div class="socials">
-        <a class="socials-item socials-item-vk" href="#">vk</a>
-        <a class="socials-item socials-item-fb" href="#">facebook</a>
-        <a class="socials-item socials-item-inst" href="#">instagram</a>
+        <a class="socials-item" href="#"><span class="icon-vk socials-icon"></span></a><!--
+     --><a class="socials-item" href="#"><span class="icon-facebook socials-icon"></span></a><!--
+     --><a class="socials-item" href="#"><span class="icon-instagramm socials-icon"></span></a>
       </div>
+
       <div class="discount">
         <b class="discount-lead">Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    
   </body>
 </html>
