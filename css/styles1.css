@@ -370,8 +370,25 @@ body {
   background-color: #00ca74;
 }
 
+.features-item-apps .features-btn:hover {
+  background-color: #01a25e;
+}
+
+.features-item-apps .features-btn:active {
+  background-color: #009053;
+}
+
+
 .features-item-present .features-btn {
   background-color: #efc84a;
+}
+
+.features-item-present .features-btn:hover {
+  background-color: #d6ae2c;
+}
+
+.features-item-present .features-btn:active {
+  background-color: #c09b24;
 }
 
 /* Description */
