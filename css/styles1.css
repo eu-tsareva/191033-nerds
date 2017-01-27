@@ -106,6 +106,8 @@ body {
 
   background-color: #fb565a;
   border-radius: 3px;
+  border: none;
+  outline: none;
 }
 
 .btn:hover {
@@ -1096,3 +1098,110 @@ body {
   outline-offset: -2px;
   cursor: default;
 }
+
+
+/*** Feedback pop-up ***/
+
+.modal-content {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+
+  display: none;
+  margin: 0 auto;
+}
+
+.modal-content-feedback {
+  display: block;
+  width: 470px;
+  padding: 50px 80px;
+  padding-right: 90px;
+
+  color: #000000;
+
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  font-size: 0;
+
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: #fb565a;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+
+  position: absolute;;
+  top: 17px;
+  left: 7.5px;
+
+  display: block;
+  width: 25px;
+  height: 5px;
+
+  background-color: #ffffff;
+}
+
+.modal-content-close::before {
+  transform: rotate(-45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(45deg);
+}
+
+.feedback-form .form-field-wrap {
+  display: inline-block;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.feedback-form .form-field-wrap-short {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.feedback-form .form-field-wrap-short:nth-child(2n) {
+  margin-right: 0;
+}
+
+.feedback-form .form-field-wrap-long {
+  width: 100%;
+}
+
+.feedback-form .form-field {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 8px 15px;
+
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+
+  border: 2px #d7dcde solid;
+  border-radius: 2px;
+}
+
+ .feedback-btn {
+   width: 100%;
+   margin-top: 30px;
+ }
