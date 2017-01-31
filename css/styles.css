@@ -275,7 +275,7 @@ body {
 .slider-controls {
   position: absolute;
   left: 50%;
-  bottom: 94px;
+  bottom: 95px;
 
   margin-left: -35px;
 
@@ -283,38 +283,24 @@ body {
 }
 
 .slider-controls label {
-  position: relative;
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 4px;
+  height: 4px;
   margin-right: 9px;
 
   background-color: #ffffff;
+  border: 3px solid white;
   border-radius: 50%;
   vertical-align: bottom;
   cursor: pointer;
 }
 
-.slider-controls label::before {
-  content: "";
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  display: none;
-  width: 5px;
-  height: 5px;
-  margin-left: -2.5px;
-  margin-top: -2.5px;
-
+#slider-radio-1:checked ~ .slider-controls label[for="slider-radio-1"],
+#slider-radio-2:checked ~ .slider-controls label[for="slider-radio-2"],
+#slider-radio-3:checked ~ .slider-controls label[for="slider-radio-3"] {
   background-color: #c1c1c1;
-  border-radius: 50%;
 }
-
-#slider-radio-1:checked ~ .slider-controls #slider-label-1::before { display: block; }
-#slider-radio-2:checked ~ .slider-controls #slider-label-2::before { display: block; }
-#slider-radio-3:checked ~ .slider-controls #slider-label-3::before { display: block; }
 
 /*** Main content ***/
 
