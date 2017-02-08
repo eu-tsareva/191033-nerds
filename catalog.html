@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
@@ -12,21 +13,22 @@
   <body class="catalog-page">
     <header class="main-header">
       <div class="container">
-        <div class="page-menu clearfix">
-          <a class="page-menu-logo" href="index.html">
-            <img src="img/logo-small.png" width="139" height="56" alt="Логотип Nerds">
-          </a>
-          <div class="page-menu-inner clearfix">
-            <ul class="page-menu-nav inline-list">
+        <div class="page-menu">
+          <nav class="page-menu-nav">
+            <a class="page-menu-logo" href="index.html">
+              <img src="img/logo-small.png" width="139" height="56" alt="Логотип Nerds">
+            </a>
+            <a class="page-menu-btn page-menu-link" href="#">Меню</a>
+            <ul class="inline-list">
               <li><a class="page-menu-link" href="#">Студия</a></li>
               <li><a class="page-menu-link" href="#">Клиенты</a></li>
               <li><a class="page-menu-link page-menu-link-active">Магазин</a></li>
               <li><a class="page-menu-link" href="#">Контакты</a></li>
             </ul>
+          </nav>
             <div class="page-menu-user user-block">
               <a class="page-menu-link user-block-link" href="#"><span class="icon-basket user-block-icon"></span>Корзина</a>
             </div>
-          </div>
         </div>
 
         <h1>Добро пожаловать в магазин готовых макетов</h1>
@@ -221,7 +223,7 @@
 
 
     <section class="map">
-      <img class="map-image" src="img/map.jpg" width="1199" height="416" alt="Карта проезда">
+      <!-- <img class="map-image" src="img/map.jpg" width="1199" height="416" alt="Карта проезда"> -->
       <div id="yandex-map"></div>
       <div class="container">
         <div class="contacts">

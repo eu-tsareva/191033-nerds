@@ -26,3 +26,11 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
+
+var showMenu = document.querySelector('.page-menu-btn');
+var mainMenu = document.querySelector('.page-menu-btn+ul');
+
+showMenu.addEventListener('click', function(event) {
+  event.preventDefault();
+  mainMenu.classList.toggle('open');
+});
