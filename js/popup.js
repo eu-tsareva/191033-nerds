@@ -30,7 +30,8 @@ window.addEventListener("keydown", function(event) {
 var showMenu = document.querySelector('.page-menu-btn');
 var mainMenu = document.querySelector('.page-menu-btn+ul');
 
-showMenu.addEventListener('click', function(event) {
-  event.preventDefault();
-  mainMenu.classList.toggle('open');
+document.querySelector('body').addEventListener('click', function(event) {
+  if(mainMenu.classList.contains('open')) {
+     mainMenu.classList.remove('open');
+  }
 });

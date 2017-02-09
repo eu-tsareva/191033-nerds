@@ -136,7 +136,7 @@ img {
   flex-wrap: nowrap;
 
   position: relative;
-  padding-top: 26px;
+  padding-top: 2.954545454545%;
 }
 
 .page-menu-link {
@@ -231,7 +231,7 @@ img {
 /* Page menu */
 
 .index-page .page-menu {
-  margin-bottom: 34px;
+  margin-bottom: 3.863636363636%;
 }
 
 /* Slider */
@@ -244,8 +244,8 @@ img {
   display: none;
   overflow: hidden;
 
-  min-height: 319px;
-  padding-bottom: 80px;
+  height: 239px;
+  padding-bottom: 9.090909090909%;
 }
 
 #slider-radio-1:checked ~ #slider-block-1 { display: block; }
@@ -259,12 +259,12 @@ img {
 .slider-content {
   float: left;
   width: 53.409090909091%;;
-  padding-top: 40px;
+  padding-top: 4.545454545455%;
 }
 
 .slider-lead {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 4.255319148936%;
 
   font-size: 36px;
   line-height: 1;
@@ -275,11 +275,11 @@ img {
 
 .slider-content p {
   margin: 0;
-  margin-top: 7px;
+  margin-top: 1.489361702128%;;
 }
 
 .slider-btn {
-  margin-top: 26px;
+  margin-top: 5.531914893617%;
   padding-left: 70px;
   padding-right: 70px;
 }
@@ -326,25 +326,24 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 80px;
+  padding-top: 9.090909090909%;
 }
 
 .features-item {
   width: 240px;
-  padding-bottom: 80px;
-  flex-shrink: 0;
+  padding-bottom: 9.090909090909%;
 }
 
 .features-img {
   display: block;
   width: 240px;
   height: 124px;
-  margin-bottom: 23px;
+  margin-bottom: 9.583333333333%;
 }
 
 .features-item h2 {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 5.833333333333%;
 
   font-size: 18px;
   line-height: 1.6667;
@@ -355,13 +354,13 @@ img {
 
 .features-item p {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 4.166666666667%;
 
   font-size: 15px;
 }
 
 .features-btn {
-  margin-top: 25px;
+  margin-top: 10.416666666667%;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -397,7 +396,7 @@ img {
 
   display: flex;
   flex-wrap: wrap;
-  padding: 70px 0;
+  padding: 7.954545454545% 0;
 }
 
 .description-logo {
@@ -410,14 +409,14 @@ img {
 }
 
 .description-intro {
-  width: 64.772727272727%;
-  margin-bottom: 25px;
+  width: 64.772727272727%;  /*  570px  */
+  margin-bottom: 4.385964912281%;  /*  25px  */
   padding-right: 5.681818181818%;;
 }
 
 .description-lead {
   display: block;
-  margin-bottom: 17px;
+  margin-bottom: 2.982456140351%;  /*  17px  */
 
   font-size: 36px;
   line-height: 1;
@@ -426,11 +425,11 @@ img {
 
 .description-intro p {
   margin: 0;
-  margin-top: 7px;
+  margin-top: 1.228070175439%;  /*  7px  */
 }
 
 .description-column {
-  margin-top: 20px;
+  margin-top: 2.272727272727%; /*  20px  */
 }
 
 .description-column-left {
@@ -488,9 +487,9 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 85px;
-  padding-top: 46px;
-  padding-bottom: 31px;
+  margin-bottom: 9.659090909091%;
+  padding-top: 5.227272727273%;
+  padding-bottom: 3.522727272727%;
 }
 
 .portfolio-item {
@@ -579,19 +578,20 @@ img {
 /*** Page footer ***/
 
 .main-footer {
-  padding: 75px 0;
+  padding: 8.522727272727% 0;
 }
 
 .socials {
   float: left;
-  width: 240px;
+  min-width: 240px;
+  max-width: 320px;
 }
 
 .socials-item {
   display: inline-block;
   width: 62px;
   height: 62px;
-  margin-right: 11.25%;
+  margin-right: 11.25%;  /*  27px  */
 
   color: #ffffff;
   text-align: center;
@@ -621,12 +621,12 @@ img {
 
 .discount {
   float: right;
-  width: 63.636363636364%;
+  width: 63.636363636364%;  /*  560px  */
 }
 
 .discount-lead {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 1.785714285714%;  /*  10px  */
 
   font-size: 36px;
   line-height: 1;
@@ -1255,10 +1255,6 @@ img {
     background: none;
   }
 
-  .slider-block {
-    min-height: 250px;
-  }
-
   .slider-content {
     width: 100%;
   }
@@ -1313,30 +1309,6 @@ img {
     box-shadow: none;
     color: #aaa;
   }
-
-  .description {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .portfolio {
-    margin-bottom: 40px;
-    padding-top: 24px;
-  }
-
-  .features {
-    padding-top: 40px;
-  }
-
-  .features-item {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-  }
-
-  .main-footer {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 }
 
 @media screen and (max-width: 695px) {
@@ -1369,8 +1341,8 @@ img {
 }
 
 @media screen and (max-width: 490px) {
-    .slider-block {
-      min-height: 200px;
+    .slider {
+      display: none;
     }
 
     .description, .main-header {
@@ -1388,14 +1360,6 @@ img {
 
     .features {
       justify-content: space-around;
-    }
-
-    .features-item {
-     border-bottom: 1px #eeeeee solid;
-    }
-
-    .features-item:last-child {
-     border-bottom: none;
     }
 
     .portfolio {
